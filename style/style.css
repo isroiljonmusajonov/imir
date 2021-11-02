@@ -41,6 +41,9 @@ button {
   align-items: center;
   padding: 10px 9%;
 }
+.navbar .bars {
+  display: none;
+}
 
 .navbar .menu a {
   text-decoration: none;
@@ -79,6 +82,7 @@ select {
 
 .headingimg img {
   width: 100%;
+  object-fit: cover;
   height: 90vh;
 }
 .headingimg .text {
@@ -89,11 +93,11 @@ select {
   left: 135px;
 }
 .headingimg .text h1 {
-  color: white;
+  color: #fff;
 }
 .headingimg .text input {
-  width: 65%;
-  padding: 5px;
+  width: 75%;
+  padding: 10px 15px;
   outline: none;
   border: none;
   border-radius: 10px;
@@ -102,8 +106,8 @@ select {
 .headingimg .text i {
   cursor: pointer;
   position: relative;
-  left: 58%;
-  padding: 9px;
+  left: 68%;
+  padding: 14px 10px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   background: #c4c4c4;
@@ -248,6 +252,7 @@ select {
   margin-top: 50px;
 }
 .silse .silse-box {
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
@@ -383,10 +388,10 @@ select {
   display: flex;
   justify-content: space-between;
   padding: 20px 9%;
+  /* border: 1px solid red; */
 }
 .contaww {
   width: 100%;
-
   position: relative;
 }
 .contaww img {
@@ -530,4 +535,127 @@ footer .footer-box1 button:hover {
   background-color: #2d11be;
   color: white;
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  .navbar .menu {
+    display: none;
+  }
+  .navbar .btn {
+    display: none;
+  }
+  .navbar .bars {
+    border: 1px solid #444;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .navbar .bars i {
+    font-size: 27px;
+    padding: 5px;
+  }
+  .navbar {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 9%;
+  }
+
+  .navbar .logo img {
+    object-fit: cover;
+  }
+  .headingimg .text {
+    position: absolute;
+    width: 300px;
+
+    height: 200px;
+
+    top: 200px;
+    left: 20px;
+  }
+  .headingimg img {
+    width: 100%;
+    object-fit: cover;
+    height: 80vh;
+  }
+  .headingimg .text input {
+    width: 85%;
+    padding: 7px;
+    border-radius: 10px;
+  }
+  .headingimg .text i {
+    position: relative;
+    left: 74%;
+    padding: 11px;
+  }
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 9%;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .pople {
+    width: 100%;
+    position: relative;
+  }
+  .pople img {
+    object-fit: cover;
+  }
+  .pople .textt {
+    position: absolute;
+    width: 48%;
+    margin: auto;
+    top: 25px;
+    left: 130px;
+  }
+  .pople .textt h2 {
+    font-size: 15px;
+  }
+  .silse .silse-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    display: flex;
+  }
+  .silse .silse-box .silse-box1 {
+    margin: 20px auto;
+    /* border: px solid red; */
+  }
+  .silse .silse-box .silse-box1 img {
+    padding: 20px 42px 10px 42px;
+  }
+  .woman .woman-box .woman-box1 {
+    margin: 10px auto;
+    /* border: 2px solid red; */
+  }
+  .emblema .emblemas .emblemas-box {
+    margin: 20px auto;
+  }
+  .contaww {
+    display: none;
+  }
+  footer .footer-box {
+    margin: auto;
+  }
+  footer .footer-box1 button {
+    padding: 12px 5px;
+    width: 100px;
+    background-color: #2d11be;
+    color: white;
+    /* font-weight: bold; */
+    position: absolute;
+    font-size: 13px;
+    top: -5px;
+    left: 240px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 5px;
+  }
+  .footer-img .footer-bottoms button {
+    margin-top: 25px;
+  }
 }
