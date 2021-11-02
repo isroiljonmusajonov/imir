@@ -642,16 +642,17 @@ footer .footer-box1 button:hover {
   footer .footer-box {
     margin: auto;
   }
+
   footer .footer-box1 button {
     padding: 12px 2px;
-    width: 90px;
+    width: 95px;
     background-color: #2d11be;
     color: white;
     /* font-weight: bold; */
     position: absolute;
     font-size: 13px;
     top: -5px;
-    /* left: 240px; */
+    left: 240px;
     border-bottom-left-radius: 0px;
     border-top-left-radius: 0px;
     border-bottom-right-radius: 10px;
