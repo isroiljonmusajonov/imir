@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.4s linear;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+button {
+  border: none;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+.contact-box .wel #layk:hover {
+  color: red;
+}
+
+.In {
+  border: 1px solid #2d11be;
+  color: #2d11be;
+  background: none;
+}
+.In:hover {
+  background-color: #2d11be;
+  color: white;
+}
+.Up {
+  border: 1px solid #2d11be;
+  background-color: #2d11be;
+  color: white;
+}
+.Up:hover {
+  border: 1px solid #2d11be;
+  color: #2d11be;
+  background: none;
+}
+.navbar .logo img {
+  object-fit: cover;
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 10px 15px whitesmoke;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 9%;
+}
+
+.navbar .menu a {
+  text-decoration: none;
+  margin: 0px 15px;
+  position: relative;
+  color: #000000;
+}
+.navbar .menu a::before {
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  background-color: #000000;
+}
+.navbar .menu a:hover::before {
+  width: 100%;
+  transition: all 0.4s linear;
+}
+.navbar .menu .new {
+  color: black;
+  font-weight: bold;
+}
+select {
+  margin: 0px 15px;
+  transition: all 03s linear;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.heding {
+  width: 100%;
+  /* height: 100vh; */
+  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 9%;
+}
+.heding .heding-box h4 {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.heding .heding-box h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+}
+.heding .heding-box img {
+  /* border: 1px solid red; */
+  height: 550px;
+  object-fit: cover;
+  animation: float 3s linear infinite;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(2rem);
+  }
+}
+.contact-h1 .h1 {
+  width: 50%;
+  border: 1px solid #444;
+  margin: auto;
+  border-radius: 50px;
+}
+.contact-h1 .h1 h1 {
+  text-align: center;
+  padding: 15px 0px;
+}
+.contact-box {
+  width: 250px;
+  height: 385px;
+  /* background: #f8f8f8; */
+  border: 1px solid rgba(68, 68, 68, 0.37);
+  margin: 20px auto;
+  border-radius: 5px;
+}
+.contact-box:hover {
+  box-shadow: 0px 10px 15px rgba(68, 68, 68, 0.37);
+}
+.contact-box img {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  padding: 10px;
+  object-fit: cover;
+}
+.contact-box h6 {
+  color: #000000;
+  font-size: 17px;
+  margin-left: 10px;
+}
+
+.contact-box .q11 {
+  font-size: 22px;
+  line-height: 24px;
+  text-transform: uppercase;
+  /* font-weight: ; */
+  margin-left: 10px;
+  color: #000000;
+  margin-top: 5px;
+}
+
+.number {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 20px 20px 20px;
+  text-align: center;
+  padding: 7px 0px 0px 7px;
+  margin-left: 170px;
+}
+.number input {
+  border: 1px solid #444;
+  background: none;
+  height: 26px;
+}
+.icons {
+  margin-top: -10px;
+  margin-left: 10px;
+}
+.icons i {
+  font-size: 12px;
+  color: #ed9005;
+  cursor: pointer;
+  margin: 15px 1px 0px 1px;
+}
+.number p {
+  padding-top: 3px;
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
+}
+.wel i {
+  padding: 5px;
+  border-radius: 50%;
+  border: 1px solid #444;
+  cursor: pointer;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem 9%;
+  align-items: center;
+  margin-top: 70px;
+}
+.contaww {
+  width: 100%;
+
+  position: relative;
+}
+.contaww img {
+  width: 100%;
+}
+.contaww .div {
+  position: absolute;
+  top: 90px;
+  left: 120px;
+  width: 80%;
+  height: 100px;
+  /* border: 1px solid red; */
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1px 5%;
+}
+
+.contaww .div .div-box p {
+  font-size: 23px;
+  color: white;
+  /* margin-top: -8px; */
+}
+.contaww .div .div-box button {
+  background-color: rgba(68, 68, 68, 0.089);
+  border: 1px solid #fff;
+  color: #fff;
+  margin-top: 5px;
+  padding: 7px 25px;
+}
+.contaww .div .div-box button:hover {
+  background-color: white;
+  color: #2d11be;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.contaww .div .div-box i {
+  color: #fff;
+  margin: 0px 15px;
+  font-size: 35px;
+  cursor: pointer;
+}
+footer {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 9%;
+}
+footer .footer-box {
+  width: 200px;
+  height: 230px;
+  /* border: 1px solid red; */
+}
+
+footer .footer-box h5 {
+  margin-top: 3px;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+}
+footer .footer-box h6 {
+  margin: 6px 0px;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  /* border: 1px solid red; */
+}
+footer .footer-box p {
+  line-height: 1.2;
+  margin-top: 5px;
+}
+footer .footer-box a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  margin: 6px 0px;
+  /* border: 1px solid red; */
+}
+footer .footer-box .type {
+  margin-top: 5px;
+}
+footer .footer-box i {
+  margin-top: 5px;
+}
+footer .footer-box1 {
+  width: 365px;
+  height: 230px;
+}
+footer .footer-box1 h5 {
+  color: #000;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+footer .footer-box1 input {
+  margin-top: 10px;
+  padding: 15px 15px;
+  width: 95%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: whitesmoke;
+}
+footer .footer-box1 .obuna {
+  position: relative;
+}
+footer .footer-box1 button {
+  padding: 14px 10px;
+  background-color: #2d11be;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 240px;
+  margin: 10px 5px;
+}
+.footer-bottom {
+  border-bottom: 1px solid black;
+  height: 2px;
+  width: 78%;
+  margin: auto;
+}
+.footer-img {
+  width: 100%;
+}
+.footer-img .footer-bottoms {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 25px 0px 25px 0px;
+}
+.top-arrow {
+  text-align: end;
+  margin: 10px;
+}
+.top-arrow a {
+  border-radius: 50%;
+  padding: 15px 17px;
+  text-decoration: none;
+  background-color: #2d11be;
+  color: white;
+  cursor: pointer;
+}
