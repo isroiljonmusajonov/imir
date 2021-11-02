@@ -608,6 +608,9 @@ footer .footer-box1 button:hover {
     top: 25px;
     left: 130px;
   }
+  .navbar .bars {
+    display: block;
+  }
   .pople .textt h2 {
     font-size: 15px;
   }
@@ -640,15 +643,15 @@ footer .footer-box1 button:hover {
     margin: auto;
   }
   footer .footer-box1 button {
-    padding: 12px 5px;
-    width: 100px;
+    padding: 12px 2px;
+    width: 90px;
     background-color: #2d11be;
     color: white;
     /* font-weight: bold; */
     position: absolute;
     font-size: 13px;
     top: -5px;
-    left: 240px;
+    /* left: 240px; */
     border-bottom-left-radius: 0px;
     border-top-left-radius: 0px;
     border-bottom-right-radius: 10px;
@@ -656,6 +659,9 @@ footer .footer-box1 button:hover {
     margin: 5px;
   }
   .footer-img .footer-bottoms button {
-    margin-top: 25px;
+    margin-top: 15px;
+  }
+  .footer-img .footer-bottoms button img {
+    object-fit: cover;
   }
 }
