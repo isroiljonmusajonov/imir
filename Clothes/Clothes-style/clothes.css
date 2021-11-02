@@ -141,6 +141,7 @@ select {
   height: 280px;
   margin: auto;
   flex-direction: column;
+  border-radius: 20px;
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
