@@ -644,25 +644,36 @@ footer .footer-box1 button:hover {
   }
 
   footer .footer-box1 button {
-    padding: 12px 2px;
+    padding: 10px 2px;
     width: 95px;
     background-color: #2d11be;
     color: white;
     /* font-weight: bold; */
     position: absolute;
     font-size: 13px;
-    top: -5px;
-    left: 240px;
+    top: -4px;
+    left: 210px;
     border-bottom-left-radius: 0px;
     border-top-left-radius: 0px;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
-    margin: 5px;
+    /* margin: 5px; */
   }
   footer .footer-box1 {
     width: 320px;
-    height: 230px;
+    /* border: 1px solid red; */
+    height: 200px;
     /* margin: auto; */
+  }
+  footer .footer-box1 input {
+    padding: 10px 5px;
+    width: 310px;
+    font-size: 14px;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    /* border: none; */
+    outline: none;
+    background-color: whitesmoke;
   }
   .footer-img .footer-bottoms button {
     margin-top: 15px;
