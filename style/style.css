@@ -659,6 +659,11 @@ footer .footer-box1 button:hover {
     border-top-right-radius: 10px;
     margin: 5px;
   }
+  footer .footer-box1 {
+    width: 370px;
+    height: 230px;
+    margin: auto;
+  }
   .footer-img .footer-bottoms button {
     margin-top: 15px;
   }
