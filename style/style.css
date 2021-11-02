@@ -660,9 +660,9 @@ footer .footer-box1 button:hover {
     margin: 5px;
   }
   footer .footer-box1 {
-    width: 370px;
+    width: 340px;
     height: 230px;
-    margin: auto;
+    /* margin: auto; */
   }
   .footer-img .footer-bottoms button {
     margin-top: 15px;
