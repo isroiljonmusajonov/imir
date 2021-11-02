@@ -605,8 +605,8 @@ footer .footer-box1 button:hover {
     position: absolute;
     width: 48%;
     margin: auto;
-    top: 25px;
-    left: 110px;
+    top: 15px;
+    left: 130px;
   }
   .navbar .bars {
     display: block;
