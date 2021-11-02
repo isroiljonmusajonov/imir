@@ -652,7 +652,7 @@ footer .footer-box1 button:hover {
     position: absolute;
     font-size: 13px;
     top: -4px;
-    left: 210px;
+    left: 190px;
     border-bottom-left-radius: 0px;
     border-top-left-radius: 0px;
     border-bottom-right-radius: 10px;
@@ -660,16 +660,16 @@ footer .footer-box1 button:hover {
     /* margin: 5px; */
   }
   footer .footer-box1 {
-    width: 320px;
-    /* border: 1px solid red; */
+    width: 290px;
+    border: 1px solid red;
     height: 200px;
     /* margin: auto; */
   }
   footer .footer-box1 input {
     padding: 10px 5px;
-    width: 310px;
+    width: 290px;
     font-size: 14px;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     border-radius: 10px;
     /* border: none; */
     outline: none;
