@@ -172,6 +172,13 @@ nav .cancel-icons {
     flex: 2;
     text-align: center;
   }
+  nav .logo img {
+    margin: 0px;
+    object-fit: cover;
+    object-position: center;
+
+    padding-left: 60px;
+  }
   nav .nav-items li .ww {
     font-weight: 600;
     color: red;
@@ -258,7 +265,7 @@ nav .cancel-icons {
     display: block;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 450px) {
   nav .search-icons,
   nav .cancel-icons,
   nav .menu-icon {
@@ -309,6 +316,153 @@ nav .cancel-icons {
   margin: auto;
   border-radius: 20px;
 }
+.contaww {
+  width: 100%;
+  position: relative;
+}
+.contaww img {
+  width: 100%;
+}
+.contaww .div {
+  position: absolute;
+  top: 90px;
+  left: 120px;
+  width: 80%;
+  height: 100px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1px 5%;
+}
+.contaww .div .div-box h5 {
+  color: white;
+}
+.contaww .div .div-box p {
+  color: white;
+  margin-top: -8px;
+}
+.contaww .div .div-box button {
+  background-color: rgba(68, 68, 68, 0.089);
+  border: 1px solid #fff;
+  color: #fff;
+}
+.contaww .div .div-box button:hover {
+  background-color: white;
+  color: #2d11be;
+}
+.contaww .div .div-box i {
+  color: #fff;
+  margin: 0px 15px;
+  font-size: 35px;
+  cursor: pointer;
+}
+footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 9%;
+}
+footer .footer-box {
+  width: 200px;
+  height: 230px;
+  /* border: 1px solid black; */
+}
+footer .footer-box a i {
+  padding: 5px 0px;
+}
+footer .footer-box h5 {
+  margin-top: 3px;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+}
+footer .footer-box h6 {
+  margin-top: 3px;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+}
+footer .footer-box p {
+  line-height: 1.2;
+  margin-top: -5px;
+}
+footer .footer-box a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
+footer .footer-box .type {
+  margin-top: 5px;
+}
+footer .footer-box i {
+  margin-top: 5px;
+}
+footer .footer-box1 {
+  width: 370px;
+  height: 230px;
+}
+footer .footer-box1 h5 {
+  color: #000;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+footer .footer-box1 input {
+  padding: 10px 15px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: whitesmoke;
+}
+footer .footer-box1 .obuna {
+  position: relative;
+}
+footer .footer-box1 button {
+  padding: 5px 10px;
+  background-color: #2d11be;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 230px;
+  margin: 5px;
+}
+footer .footer-box1 button:hover {
+  background-color: white;
+  color: #2d11be;
+  cursor: pointer;
+}
+.footer-bottom {
+  border-bottom: 1px solid black;
+  height: 2px;
+  width: 78%;
+  margin: auto;
+}
+.footer-img {
+  width: 100%;
+}
+.footer-img .footer-bottoms {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 25px 0px 25px 0px;
+}
+.top-arrow {
+  text-align: end;
+  margin: 10px;
+}
+.top-arrow a {
+  border-radius: 50%;
+  padding: 15px 17px;
+  text-decoration: none;
+  background-color: #2d11be;
+  color: white;
+  cursor: pointer;
+}
+
 @media (max-width: 500px) {
   .navbar {
     display: flex;

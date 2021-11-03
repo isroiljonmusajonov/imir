@@ -188,6 +188,13 @@ nav .cancel-icons {
     flex: 2;
     text-align: center;
   }
+  nav .logo img {
+    margin: 0px;
+    object-fit: cover;
+    object-position: center;
+
+    padding-left: 60px;
+  }
   nav form {
     position: absolute;
     top: 80px;
@@ -275,7 +282,7 @@ nav .cancel-icons {
     display: block;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 450px) {
   nav .search-icons,
   nav .cancel-icons,
   nav .menu-icon {
