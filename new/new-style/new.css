@@ -343,11 +343,6 @@ footer .footer-box1 button {
 @media (max-width: 600px) {
   .navbar {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    box-shadow: 0px 10px 15px whitesmoke;
-    justify-content: space-between;
-    align-items: center;
     padding: 10px 9%;
   }
   .navbar .btn {
@@ -382,5 +377,28 @@ footer .footer-box1 button {
     height: 300px;
     object-fit: cover;
     animation: float 3s linear infinite;
+  }
+  .contact-h1 .h1 {
+    width: 60%;
+  }
+  .contaww {
+    display: none;
+  }
+  .contact-h1 .h1 h1 {
+    text-align: center;
+    font-size: 25px;
+    padding: 5px 0px;
+  }
+  footer .footer-box {
+    width: 200px;
+    height: 230px;
+    /* border: 1px solid red; */
+    margin: auto;
+  }
+  .footer-img .footer-bottoms {
+    width: 80%;
+  }
+  .footer-img .footer-bottoms button {
+    margin: 10px;
   }
 }

@@ -679,10 +679,11 @@ footer .footer-box1 button:hover {
     outline: none;
     background-color: whitesmoke;
   }
-  .footer-img .footer-bottoms button {
-    margin-top: 15px;
+
+  .footer-img .footer-bottoms {
+    width: 80%;
   }
-  .footer-img .footer-bottoms button img {
-    object-fit: cover;
+  .footer-img .footer-bottoms button {
+    margin: 10px;
   }
 }
