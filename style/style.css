@@ -174,17 +174,23 @@ nav .cancel-icons {
 @media (max-width: 1140px) {
   nav {
     padding: 0px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   nav .logo {
     flex: 2;
     margin: 0px;
     padding: 0px;
+    /* margin-right: 50px; */
+    margin: auto;
   }
   nav .logo img {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0px;
-    padding: 0px;
+    object-fit: cover;
+    object-position: center;
+    /* width: 63%; */
+    /* width: 200px; */
+    padding-left: 60px;
   }
   nav .nav-items li .ww {
     font-weight: 600;
