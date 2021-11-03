@@ -337,21 +337,22 @@ footer .footer-box1 button {
   color: white;
   cursor: pointer;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .heding .heding-box h4 {
     margin-bottom: 15px;
     margin-top: 50px;
   }
   .heding .heding-box h1 {
-    font-size: 30px;
+    font-size: 27px;
     color: blue;
   }
   .heding {
+    width: 100%;
     border: 1px solid red;
   }
   .heding .heding-box img {
     border: 1px solid blue;
-    height: 350px;
+    height: 300px;
     object-fit: cover;
     animation: float 3s linear infinite;
   }
