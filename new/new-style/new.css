@@ -344,13 +344,14 @@ footer .footer-box1 button {
   }
   .heding .heding-box h1 {
     font-size: 30px;
+    color: blue;
   }
   .heding {
     border: 1px solid red;
   }
   .heding .heding-box img {
     border: 1px solid blue;
-    height: 450px;
+    height: 350px;
     object-fit: cover;
     animation: float 3s linear infinite;
   }
