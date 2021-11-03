@@ -81,7 +81,7 @@ select {
 .heading-img img {
   width: 100%;
   object-fit: cover;
-  height: 670px;
+  height: 570px;
 }
 
 .sction {
@@ -91,7 +91,7 @@ select {
   padding: 2rem 9%;
   align-items: center;
 }
-.sction .sction-box i {
+.sction .sction-box1 i {
   font-size: 35px;
   color: #2d11be;
   cursor: pointer;
@@ -110,6 +110,11 @@ select {
   margin: 12px 0px;
   font-size: 15px;
   color: #444;
+}
+.map iframe {
+  display: block;
+  margin: auto;
+  border-radius: 20px;
 }
 @media (max-width: 500px) {
   .navbar {
@@ -154,5 +159,13 @@ select {
   }
   .sction .sction-box img {
     width: 270px;
+  }
+  .heading-img {
+    width: 100%;
+  }
+  .heading-img img {
+    width: 100%;
+    /* object-fit: cover;
+    height: 570px; */
   }
 }
