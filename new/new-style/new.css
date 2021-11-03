@@ -5,6 +5,7 @@
   transition: all 0.4s linear;
   text-transform: capitalize;
   text-decoration: none;
+  list-style: none;
 }
 button {
   border: none;
@@ -37,7 +38,7 @@ button {
   color: #2d11be;
   background: none;
 }
-.navbar .logo img {
+/*.navbar .logo img {
   object-fit: cover;
 }
 .navbar {
@@ -78,7 +79,201 @@ select {
   border: none;
   outline: none;
   cursor: pointer;
+} */
+nav {
+  /* background: #171c24; */
+  background: #f8f8f8;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  height: 70px;
+  padding: 0px 100px;
+  box-shadow: 0px 10px 15px rgba(68, 68, 68, 0.14);
+  /* z-index: -1; */
 }
+nav .nav-items {
+  display: flex;
+  flex: 1;
+  padding: 0 0 0 40px;
+}
+nav .nav-items li {
+  padding: 0px 15px;
+}
+nav .nav-items li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+nav .nav-items li .ww {
+  font-weight: 600;
+  border-bottom: 2px solid #000;
+}
+nav .logo {
+  object-fit: cover;
+  /* color: #000;
+  text-transform: capitalize; */
+}
+nav form {
+  display: flex;
+  height: 40px;
+  background: #1e232b23;
+  border-radius: 7px;
+  padding: 2px;
+  min-width: 18% !important;
+  border: 1px solid rgba(155, 155, 155, 0.2);
+}
+nav form .search-data {
+  height: 100%;
+  width: 100%;
+  font-weight: 500;
+  background: none;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+
+  color: #fff;
+}
+nav form button {
+  padding: 0 15px;
+  background: #ff3d00;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 2px;
+}
+nav .menu-icon,
+nav .search-icons,
+nav .cancel-icons {
+  width: 40px;
+  text-align: center;
+  color: #000;
+  /* border: 1px solid red; */
+  margin: 0px 50px;
+  font-size: 21px;
+  cursor: pointer;
+  display: none;
+}
+nav .menu-icon span,
+nav .search-icons,
+nav .cancel-icons {
+  display: none;
+  /* max-width: ; */
+}
+@media (max-width: 1245px) {
+  nav {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 1140px) {
+  nav {
+    padding: 0px;
+  }
+  nav .logo {
+    flex: 2;
+    text-align: center;
+  }
+  nav .nav-items li .ww {
+    font-weight: 600;
+    color: red;
+    border: none;
+  }
+  nav form {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    /* border: 1px solid red; */
+    opacity: 0;
+    pointer-events: none;
+    transition: top 0.3s ease, opacity 0.1s ease;
+  }
+  nav form.active {
+    opacity: 1;
+    top: 95px;
+    pointer-events: auto;
+  }
+  nav form::before {
+    position: absolute;
+    content: "";
+    top: -12px;
+    right: 0;
+    width: 0;
+    height: 0;
+    margin: -20px 0 0;
+    /* z-index: -1; */
+    border: 10px solid transparent;
+    border-bottom-color: #1e232b;
+  }
+  nav form::after {
+    position: absolute;
+    content: "";
+    height: 60px;
+    padding: 2px;
+    /* width: 100%; */
+    width: calc(100% + 20px);
+    border-radius: 2px;
+    z-index: -2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #1e232b;
+  }
+
+  nav .nav-items {
+    position: fixed;
+    z-index: 99;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 100vh;
+    background: #14141f;
+    display: inline-block;
+    padding: 10px 50px 0 50px;
+    text-align: center;
+    transition: left 0.3s ease;
+  }
+  nav .nav-items.active {
+    left: 0%;
+  }
+  nav .nav-items li {
+    line-height: 40px;
+    margin: 10px 0px;
+  }
+  nav .nav-items li a {
+    color: #fff;
+    font-size: 20px;
+  }
+  nav .menu-icon {
+    display: block;
+  }
+  nav .search-icons,
+  nav .menu-icon span {
+    display: block;
+  }
+  nav .search-icons.hide,
+  nav .menu-icon span.hide {
+    display: none;
+  }
+  nav .cancel-icons.show {
+    display: block;
+  }
+}
+@media (max-width: 350px) {
+  nav .search-icons,
+  nav .cancel-icons,
+  nav .menu-icon {
+    margin: 0 20px;
+  }
+  nav form {
+    right: 30px;
+  }
+}
+
 .heding {
   width: 100%;
   display: flex;
@@ -341,7 +536,7 @@ footer .footer-box1 button {
   cursor: pointer;
 }
 @media (max-width: 600px) {
-  .navbar {
+  /* .navbar {
     width: 100%;
     padding: 10px 9%;
   }
@@ -358,7 +553,7 @@ footer .footer-box1 button {
     padding: 5px 9px;
     font-size: 22px;
     border-radius: 5px;
-  }
+  } */
   .heding .heding-box h4 {
     margin-bottom: 15px;
     margin-top: 50px;

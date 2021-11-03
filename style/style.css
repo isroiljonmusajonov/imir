@@ -7,7 +7,7 @@
   text-decoration: none;
   list-style: none;
 }
-/* button {
+button {
   border: none;
   padding: 5px 20px;
   border-radius: 10px;
@@ -15,13 +15,16 @@
 .contact-box .wel #layk:hover {
   color: red;
 }
+.navbar .bars {
+  display: none;
+}
 
 .In {
   border: 1px solid #2d11be;
   color: #2d11be;
   background: none;
-} */
-/* .In:hover {
+}
+.In:hover {
   background-color: #2d11be;
   color: white;
 }
@@ -34,7 +37,7 @@
   border: 1px solid #2d11be;
   color: #2d11be;
   background: none;
-} */
+}
 /* .navbar {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -105,15 +108,21 @@ nav .nav-items li a {
   font-weight: 500;
   text-transform: capitalize;
 }
+nav .nav-items li .ww {
+  font-weight: 600;
+  border-bottom: 2px solid #000;
+}
 nav .logo {
-  color: #000;
-  text-transform: capitalize;
+  object-fit: cover;
+  /* color: #000;
+  text-transform: capitalize; */
 }
 nav form {
+  position: relative;
   display: flex;
   height: 40px;
-  background: #1e232b;
-  border-radius: 2px;
+  background: #1e232b23;
+  border-radius: 7px;
   padding: 2px;
   min-width: 18% !important;
   border: 1px solid rgba(155, 155, 155, 0.2);
@@ -127,6 +136,7 @@ nav form .search-data {
   border: none;
   outline: none;
   padding: 0 10px;
+
   color: #fff;
 }
 nav form button {
@@ -144,8 +154,9 @@ nav .cancel-icons {
   width: 40px;
   text-align: center;
   color: #000;
+  /* border: 1px solid red; */
   margin: 0px 50px;
-  font-size: 18px;
+  font-size: 21px;
   cursor: pointer;
   display: none;
 }
@@ -167,6 +178,12 @@ nav .cancel-icons {
   nav .logo {
     flex: 2;
     text-align: center;
+  }
+  nav .nav-items li .ww {
+    font-weight: 600;
+    color: red;
+    border: none;
+    /* border-bottom: 2px solid red; */
   }
   nav form {
     position: absolute;
@@ -231,6 +248,7 @@ nav .cancel-icons {
     margin: 10px 0px;
   }
   nav .nav-items li a {
+    color: #fff;
     font-size: 20px;
   }
   nav .menu-icon {
