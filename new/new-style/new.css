@@ -344,10 +344,10 @@ footer .footer-box1 button {
   }
   .heding .heding-box h1 {
     font-size: 27px;
-    color: blue;
+    /* color: blue; */
   }
   .heding {
-    width: 100%;
+    width: 80%;
     border: 1px solid red;
   }
   .heding .heding-box img {
