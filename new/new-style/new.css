@@ -345,4 +345,10 @@ footer .footer-box1 button {
   .heding .heding-box h1 {
     font-size: 30px;
   }
+  .heding .heding-box img {
+    /* border: 1px solid red; */
+    height: 450px;
+    object-fit: cover;
+    animation: float 3s linear infinite;
+  }
 }
