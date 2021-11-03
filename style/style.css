@@ -40,7 +40,10 @@ button {
   justify-content: space-between;
   align-items: center;
   padding: 10px 9%;
+  height: 80px;
+  /* border: 1px solid red; */
 }
+
 .navbar .bars {
   display: none;
 }
@@ -82,6 +85,8 @@ select {
 
 .headingimg img {
   width: 100%;
+  object-position: center;
+  /* object-fit: contain; */
   object-fit: cover;
   height: 90vh;
 }
@@ -90,6 +95,7 @@ select {
   width: 450px;
   height: 200px;
   top: 160px;
+  /* border: 1px solid red; */
   left: 135px;
 }
 .headingimg .text h1 {
@@ -566,9 +572,7 @@ footer .footer-box1 button:hover {
   .headingimg .text {
     position: absolute;
     width: 300px;
-
     height: 200px;
-
     top: 200px;
     left: 20px;
   }

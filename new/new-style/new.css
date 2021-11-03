@@ -78,8 +78,6 @@ select {
 }
 .heding {
   width: 100%;
-  /* height: 100vh; */
-  /* border: 1px solid red; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -303,22 +301,14 @@ footer .footer-box1 input {
   padding: 15px 15px;
   width: 95%;
   border-radius: 10px;
+  font-size: 14px;
   border: none;
   outline: none;
   background-color: whitesmoke;
 }
-footer .footer-box1 .obuna {
-  position: relative;
-}
+
 footer .footer-box1 button {
-  padding: 14px 10px;
-  background-color: #2d11be;
-  color: white;
-  font-weight: bold;
-  position: absolute;
-  top: 0;
-  left: 240px;
-  margin: 10px 5px;
+  display: none;
 }
 .footer-bottom {
   border-bottom: 1px solid black;
@@ -346,4 +336,13 @@ footer .footer-box1 button {
   background-color: #2d11be;
   color: white;
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  .heding .heding-box h4 {
+    margin-bottom: 15px;
+    margin-top: 50px;
+  }
+  .heding .heding-box h1 {
+    font-size: 30px;
+  }
 }
