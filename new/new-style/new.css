@@ -375,8 +375,12 @@ footer .footer-box1 button {
   .heding .heding-box img {
     /* border: 1px solid blue; */
     height: 300px;
+
     object-fit: cover;
     animation: float 3s linear infinite;
+  }
+  .heding .heding-box {
+    margin: auto;
   }
   .contact-h1 .h1 {
     width: 60%;

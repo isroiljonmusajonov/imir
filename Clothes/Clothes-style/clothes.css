@@ -479,4 +479,10 @@ footer .footer-box1 button {
   .footer-img .footer-bottoms button {
     margin: 10px;
   }
+  .footer-img .footer-bottoms {
+    width: 80%;
+  }
+  .footer-img .footer-bottoms button {
+    margin: 10px;
+  }
 }

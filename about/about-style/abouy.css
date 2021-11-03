@@ -61,6 +61,9 @@ button {
   width: 100%;
   transition: all 0.4s linear;
 }
+.navbar .bars {
+  display: none;
+}
 .navbar .menu .home {
   color: black;
   font-weight: bold;
@@ -99,7 +102,6 @@ select {
   margin: 20px auto;
   border: 1px solid rgba(68, 68, 68, 0.568);
   border-radius: 20px;
-  /* margin: 30px 0px; */
 }
 .contactt img {
   object-fit: cover;
@@ -108,4 +110,49 @@ select {
   margin: 12px 0px;
   font-size: 15px;
   color: #444;
+}
+@media (max-width: 500px) {
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 9%;
+  }
+  .navbar .menu {
+    display: none;
+  }
+  .navbar .btn {
+    display: none;
+  }
+  .navbar .bars {
+    display: block;
+  }
+  .navbar .bars i {
+    font-size: 22px;
+    padding: 5px 9px;
+    cursor: pointer;
+    border: 1px solid #444;
+    border-radius: 5px;
+  }
+  .heading-img {
+    width: 100%;
+  }
+  .heading-img img {
+    width: 100%;
+    object-fit: cover;
+    height: 470px;
+  }
+  .sction .sction-box1 {
+    display: none;
+    border: 1px solid red;
+  }
+  .sction .sction-box {
+    width: 270px;
+    margin: 10px auto;
+    /* border: 1px solid red; */
+  }
+  .sction .sction-box img {
+    width: 270px;
+  }
 }

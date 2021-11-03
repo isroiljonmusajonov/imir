@@ -73,18 +73,20 @@ select {
   outline: none;
   cursor: pointer;
 }
+.navbar .bars {
+  display: none;
+}
 .contact {
   width: 80%;
-  /* height: 250px; */
+
   display: grid;
   grid-template-columns: auto auto auto;
-  /* flex-wrap: wrap; */
-  border: 1px solid #444;
-  margin: 0px auto 10px auto;
+
+  /* border: 1px solid red; */
+  margin: 20px auto 10px auto;
   border-radius: 20px;
 }
 .contact .contact-box {
-  /* border: 1px solid black; */
   width: 33.3%;
 }
 .contact .contact-box i {
@@ -174,8 +176,6 @@ select {
   left: 120px;
   width: 80%;
   height: 100px;
-  /* border: 1px solid red; */
-
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -209,7 +209,6 @@ select {
 }
 footer {
   width: 100%;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -218,7 +217,6 @@ footer {
 footer .footer-box {
   width: 200px;
   height: 230px;
-  /* border: 1px solid red; */
 }
 
 footer .footer-box h5 {
@@ -310,4 +308,69 @@ footer .footer-box1 button {
   background-color: #2d11be;
   color: white;
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  .navbar .menu {
+    display: none;
+  }
+  .navbar .btn {
+    display: none;
+  }
+  .navbar .bars {
+    display: block;
+  }
+  .navbar .bars i {
+    font-size: 22px;
+    padding: 5px 9px;
+    border: 1px solid #444;
+    border-radius: 5px;
+  }
+  .contact {
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto;
+    border: 1px solid #444;
+    padding: 0px;
+    margin: 40px auto 10px auto;
+    border-radius: 20px;
+  }
+  .contact .contact-box {
+    width: 100%;
+    margin-left: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .contact .contact-box .contact-box-text1 {
+    width: 80%;
+    margin: 0px auto;
+  }
+  .contact .contact-box .contact-box-text {
+    width: 100%;
+    margin: 0px auto;
+  }
+  .contact .contact-box .contact-box-text h4 {
+    margin-bottom: 10px;
+  }
+  .contaww {
+    display: none;
+  }
+  footer .footer-box {
+    width: 200px;
+    height: 180px;
+    /* border: 1px solid red; */
+    margin: 10px auto;
+  }
+  footer .footer-box1 {
+    width: 230px;
+    margin: auto;
+  }
+  footer .footer-box1 button {
+    display: none;
+  }
+  .footer-img .footer-bottoms {
+    width: 80%;
+  }
+  .footer-img .footer-bottoms button {
+    margin: 10px;
+  }
 }
