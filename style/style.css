@@ -686,4 +686,8 @@ footer .footer-box1 button:hover {
   .footer-img .footer-bottoms button {
     margin: 10px;
   }
+  .contaww {
+    /* display: none; */
+    border: 1px solid red;
+  }
 }
