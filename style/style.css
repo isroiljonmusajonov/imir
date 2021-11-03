@@ -174,22 +174,28 @@ nav .cancel-icons {
 @media (max-width: 1140px) {
   nav {
     padding: 0px;
+    border: 1px solid red;
   }
   nav .logo {
     flex: 2;
-    text-align: center;
+    margin: 0px;
+    padding: 0px;
+  }
+  nav .logo img {
+    border: 1px solid red;
+    margin: 0px;
+    padding: 0px;
   }
   nav .nav-items li .ww {
     font-weight: 600;
     color: red;
     border: none;
-    /* border-bottom: 2px solid red; */
   }
   nav form {
     position: absolute;
     top: 80px;
     right: 50px;
-    /* border: 1px solid red; */
+
     opacity: 0;
     pointer-events: none;
     transition: top 0.3s ease, opacity 0.1s ease;
@@ -230,6 +236,7 @@ nav .cancel-icons {
     position: fixed;
     z-index: 99;
     top: 70px;
+
     left: -100%;
     width: 100%;
     /* border: 1px solid red; */
@@ -270,7 +277,7 @@ nav .cancel-icons {
   nav .search-icons,
   nav .cancel-icons,
   nav .menu-icon {
-    margin: 0 20px;
+    margin: 0px;
   }
   nav form {
     right: 30px;
