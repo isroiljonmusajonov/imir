@@ -12,6 +12,10 @@ button {
   padding: 5px 20px;
   border-radius: 10px;
 }
+body {
+  overflow-x: hidden;
+}
+
 .contact-box .wel #layk:hover {
   color: red;
 }
@@ -38,52 +42,8 @@ button {
   color: #2d11be;
   background: none;
 }
-/* .navbar {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 9%;
-  height: 80px;
-  
-} */
-/* 
-.navbar .bars {
-  display: none;
-} */
 
-/* .navbar .menu a {
-  text-decoration: none;
-  margin: 0px 15px;
-  position: relative;
-  color: #000000;
-}
-.navbar .menu a::before {
-  content: "";
-  top: 100%;
-  left: 0;
-  width: 0;
-  height: 2px;
-  position: absolute;
-  background-color: #000000;
-} */
-/* .navbar .menu a:hover::before {
-  width: 100%;
-  transition: all 0.4s linear;
-}
-.navbar .menu .home {
-  color: black;
-  font-weight: bold;
-}
-select {
-  margin: 0px 15px;
-  transition: all 03s linear;
-  border: none;
-  outline: none;
-  cursor: pointer;
-} */
 nav {
-  /* background: #171c24; */
   background: #f8f8f8;
   display: flex;
   flex-wrap: wrap;
@@ -91,7 +51,6 @@ nav {
   justify-content: space-around;
   height: 70px;
   padding: 0px 100px;
-  /* z-index: -1; */
 }
 nav .nav-items {
   display: flex;
@@ -749,33 +708,49 @@ footer .footer-box1 button:hover {
   color: white;
   cursor: pointer;
 }
+.div {
+  background-color: whitesmoke;
+  width: 300px;
+  padding: 5px;
+  /* border: 1px solid red; */
+  position: fixed;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  display: none;
+}
+.div h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+.div input {
+  width: 85%;
+  display: block;
+  margin: 20px auto;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #444;
+  outline: none;
+}
+.div .button {
+  text-align: center;
+}
+.div .button button {
+  padding: 6px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  text-transform: capitalize;
+}
+.div.active {
+  opacity: 1;
+  display: block;
+}
 @media (max-width: 500px) {
-  /* .navbar .menu {
-    display: none;
-  }
-  .navbar .btn {
-    display: none;
-  }
-  .navbar .bars {
-    border: 1px solid #444;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  .navbar .bars i {
-    font-size: 27px;
-    padding: 5px;
-  }
-  .navbar {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 9%;
-  } */
-
-  /* .navbar .logo img {
-    object-fit: cover;
-  } */
   .headingimg .text {
     position: absolute;
     width: 300px;
@@ -805,6 +780,29 @@ footer .footer-box1 button:hover {
     align-items: center;
     margin-top: 50px;
   }
+
+  .contact-box {
+    width: 100%;
+    transform: translateX(-200%);
+
+    transition: transform 0.4s ease;
+  }
+  .contact-box:nth-of-type(even) {
+    transform: translateX(200%);
+  }
+  .contact-box.show {
+    transform: translateX(0);
+  }
+  /* .woman-box1 {
+    transform: translateX(-200%);
+    transition: transform 0.4s ease;
+  }
+  .woman-box1:nth-of-type(even) {
+    transform: translateX(200%);
+  }
+  .woman-box1.show {
+    transform: translateX(0);
+  } */
   .pople {
     width: 100%;
     position: relative;
@@ -817,11 +815,8 @@ footer .footer-box1 button:hover {
     width: 48%;
     margin: auto;
     top: 20px;
-    left: 133px;
+    left: 120px;
   }
-  /* .navbar .bars {
-    display: block;
-  } */
   .pople .textt h2 {
     font-size: 15px;
   }
@@ -835,17 +830,24 @@ footer .footer-box1 button:hover {
   }
   .silse .silse-box .silse-box1 {
     margin: 20px auto;
-    /* border: px solid red; */
+    /* border: 1px solid red; */
   }
   .silse .silse-box .silse-box1 img {
     padding: 20px 42px 10px 42px;
   }
   .woman .woman-box .woman-box1 {
     margin: 10px auto;
-    /* border: 2px solid red; */
+    /* border: 1px solid red; */
   }
   .emblema .emblemas .emblemas-box {
     margin: 20px auto;
+    /* border: 1px solid red; */
+    width: 80px;
+    height: 80px;
+  }
+  .emblema .emblemas .emblemas-box img {
+    object-fit: cover;
+    width: 100%;
   }
   .contaww {
     display: none;
@@ -859,7 +861,6 @@ footer .footer-box1 button:hover {
     width: 95px;
     background-color: #2d11be;
     color: white;
-    /* font-weight: bold; */
     position: absolute;
     font-size: 13px;
     top: -4px;
@@ -872,17 +873,13 @@ footer .footer-box1 button:hover {
   }
   footer .footer-box1 {
     width: 280px;
-    /* border: 1px solid red; */
     height: 200px;
-    /* margin: 0px; */
   }
   footer .footer-box1 input {
     padding: 10px 5px;
     width: 280px;
     font-size: 12px;
-    /* border: 1px solid red; */
     border-radius: 10px;
-    /* border: none; */
     outline: none;
     background-color: whitesmoke;
   }
