@@ -112,10 +112,10 @@ nav .nav-items li .ww {
   font-weight: 600;
   border-bottom: 2px solid #000;
 }
-nav .logo {
-  object-fit: cover;
-  /* color: #000;
-  text-transform: capitalize; */
+nav .logo h1 {
+  font-size: 35px;
+  cursor: pointer;
+  font-weight: bold;
 }
 nav form {
   position: relative;
@@ -178,17 +178,14 @@ nav .cancel-icons {
   }
   nav .logo {
     flex: 2;
-    margin: 0px;
-    padding: 0px;
-    margin: auto;
+    text-align: center;
   }
-  nav .logo img {
-    margin: 0px;
-    object-fit: cover;
-    object-position: center;
+  nav .logo h1 {
+    font-size: 28px;
+    cursor: pointer;
+    font-weight: bold;
+  }
 
-    padding-left: 60px;
-  }
   nav .nav-items li .ww {
     font-weight: 600;
     color: red;
