@@ -783,7 +783,7 @@ footer .footer-box1 button:hover {
 
   .contact-box {
     /* width: 100%; */
-    transform: translateX(200%);
+    transform: translateX(-200%);
     transition: transform 0.4s ease;
   }
   /* .contact-box:nth-of-type(even) {
