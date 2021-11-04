@@ -477,6 +477,25 @@ footer .footer-box1 button:hover {
     align-items: center;
     padding: 10px 9%;
   }
+  .contaww {
+    display: none;
+  }
+  footer .footer-box {
+    width: 200px;
+    height: 180px;
+    /* border: 1px solid red; */
+    margin: auto;
+    /* border: 1px solid black; */
+  }
+  footer .footer-box1 {
+    width: 270px;
+    margin: auto;
+    height: 230px;
+  }
+  footer .footer-box1 button {
+    display: none;
+  }
+
   .navbar .menu {
     display: none;
   }
