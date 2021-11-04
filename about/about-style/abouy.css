@@ -35,48 +35,6 @@ button {
   color: #2d11be;
   background: none;
 }
-/* .navbar {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 9%;
-}
-
-.navbar .menu a {
-  text-decoration: none;
-  margin: 0px 15px;
-  position: relative;
-  color: #000000;
-}
-.navbar .menu a::before {
-  content: "";
-  top: 100%;
-  left: 0;
-  width: 0;
-  height: 2px;
-  position: absolute;
-  background-color: #000000;
-}
-
-.navbar .menu a:hover::before {
-  width: 100%;
-  transition: all 0.4s linear;
-}
-.navbar .bars {
-  display: none;
-}
-.navbar .menu .home {
-  color: black;
-  font-weight: bold;
-}
-select {
-  margin: 0px 15px;
-  transition: all 03s linear;
-  border: none;
-  outline: none;
-  cursor: pointer;
-} */
 
 nav {
   /* background: #171c24; */
@@ -322,7 +280,7 @@ nav .cancel-icons {
 .map iframe {
   display: block;
   margin: auto;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .contaww {
   width: 100%;
@@ -346,10 +304,12 @@ nav .cancel-icons {
 }
 .contaww .div .div-box h5 {
   color: white;
+  font-size: 22px;
 }
 .contaww .div .div-box p {
   color: white;
-  margin-top: -8px;
+  margin: 5px 0px;
+  font-size: 20px;
 }
 .contaww .div .div-box button {
   background-color: rgba(68, 68, 68, 0.089);
@@ -482,11 +442,15 @@ footer .footer-box1 button:hover {
   .contaww {
     display: none;
   }
+  .map iframe {
+    margin: 0px auto 35px auto;
+    border-radius: 2px;
+  }
   footer .footer-box {
     width: 200px;
     height: 180px;
     /* border: 1px solid red; */
-    margin: auto;
+    /* margin: auto; */
     /* border: 1px solid black; */
   }
   footer .footer-box1 h5 {
@@ -495,13 +459,25 @@ footer .footer-box1 button:hover {
     text-transform: capitalize;
     font-weight: bold;
   }
+  .footer-img .footer-bottoms {
+    width: 80%;
+    /* margin: 10px; */
+    padding: 25px 0px 25px 0px;
+  }
+  .footer-img .footer-bottoms button {
+    margin: 10px;
+  }
+
   footer .footer-box1 {
     width: 270px;
-    margin: auto;
+    /* margin: auto; */
     height: 230px;
   }
   footer .footer-box1 button {
     display: none;
+  }
+  footer .footer-box1 p {
+    margin: 10px 0px;
   }
 
   .navbar .menu {
@@ -545,7 +521,5 @@ footer .footer-box1 button:hover {
   }
   .heading-img img {
     width: 100%;
-    /* object-fit: cover;
-    height: 570px; */
   }
 }
