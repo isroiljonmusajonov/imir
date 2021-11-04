@@ -852,7 +852,8 @@ footer .footer-box1 button:hover {
     display: none;
   }
   footer .footer-box {
-    margin: auto;
+    margin-top: 10px;
+    height: 180px;
   }
 
   footer .footer-box1 button {

@@ -603,9 +603,10 @@ footer .footer-box1 button {
   }
   footer .footer-box {
     width: 200px;
-    height: 230px;
+    height: 180px;
+    margin-top: 10px;
     /* border: 1px solid red; */
-    margin: auto;
+    /* margin: auto; */
   }
   .footer-img .footer-bottoms {
     width: 80%;
