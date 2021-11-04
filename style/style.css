@@ -783,15 +783,15 @@ footer .footer-box1 button:hover {
 
   .contact-box {
     /* width: 100%; */
-    transform: translateX(-800px);
+    transform: translateX(200%);
 
     transition: transform 0.4s ease;
   }
-  .contact-box:nth-of-type(even) {
-    transform: translateX(800px);
-  }
+  /* .contact-box:nth-of-type(even) {
+    transform: translateX(200%);
+  } */
   .contact-box.show {
-    transform: translateX(0px);
+    transform: translateX(0);
   }
   /* .woman-box1 {
     transform: translateX(-200%);
