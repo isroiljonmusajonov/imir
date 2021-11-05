@@ -64,14 +64,27 @@ searchBtn.onclick = () => {
   searchBtn.classList.add("hide");
   cancelBtn.classList.add("show");
 };
-const upIcon = document.querySelectorAll(".up");
-const h2 = document.getElementById("h2");
-const but = document.getElementById("but");
-const buts = document.getElementById("buts");
+// const upIcon = document.querySelectorAll(".up");
+// const h2 = document.getElementById("h2");
+// const but = document.getElementById("but");
+// const buts = document.getElementById("buts");
 
-but.addEventListener("click", function () {
-  h2.innerText = +h2.innerText - 1;
+// but.addEventListener("click", function () {
+//   h2.innerText = +h2.innerText - 1;
+// });
+// buts.addEventListener("click", function () {
+//   h2.innerText = +h2.innerText + 1;
+// });
+let divbuton = document.querySelector(".div");
+const btns = document.querySelectorAll(".btns");
+const salom = document.querySelector(".submit");
+const qayt = document.querySelector("#qayt");
+console.log(qayt);
+btns.forEach((btns) => {
+  btns.addEventListener("click", () => {
+    divbuton.classList.add("active");
+  });
 });
-buts.addEventListener("click", function () {
-  h2.innerText = +h2.innerText + 1;
+qayt.addEventListener("click", () => {
+  divbuton.classList.remove("active");
 });

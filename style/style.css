@@ -11,9 +11,12 @@ button {
   border: none;
   padding: 5px 20px;
   border-radius: 10px;
+  /* position: relative; */
 }
 body {
   overflow-x: hidden;
+  /* position: relative; */
+  /* overflow-y: hidden; */
 }
 
 .contact-box .wel #layk:hover {
@@ -692,10 +695,14 @@ footer .footer-box1 button:hover {
 }
 .footer-img .footer-bottoms {
   width: 50%;
+  position: absolute;
   margin: auto;
   text-align: center;
   padding: 25px 0px 25px 0px;
+  /* transform: translateX(320px);
+  transition: all 03s ease; */
 }
+
 .top-arrow {
   text-align: end;
   margin: 10px;
@@ -708,6 +715,7 @@ footer .footer-box1 button:hover {
   color: white;
   cursor: pointer;
 }
+
 .div {
   background-color: whitesmoke;
   width: 300px;
@@ -733,6 +741,9 @@ footer .footer-box1 button:hover {
   border-radius: 10px;
   border: 1px solid #444;
   outline: none;
+}
+.div #demo {
+  text-align: center;
 }
 .div .button {
   text-align: center;
@@ -889,5 +900,16 @@ footer .footer-box1 button:hover {
   }
   .footer-img .footer-bottoms button {
     margin: 10px;
+  }
+  .footer-img {
+    transform: translateY(420px);
+    transition: all 03s ease;
+    opacity: 0;
+    display: none;
+  }
+  .footer-img.active {
+    opacity: 3;
+    display: block;
+    transform: translateY(0px);
   }
 }

@@ -548,6 +548,51 @@ footer .footer-box1 button {
   color: white;
   cursor: pointer;
 }
+.div {
+  background-color: whitesmoke;
+  width: 300px;
+  padding: 5px;
+  /* border: 1px solid red; */
+  position: fixed;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  display: none;
+}
+.div h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+.div input {
+  width: 85%;
+  display: block;
+  margin: 20px auto;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #444;
+  outline: none;
+}
+.div #demo {
+  text-align: center;
+}
+.div .button {
+  text-align: center;
+}
+.div .button button {
+  padding: 6px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  text-transform: capitalize;
+}
+.div.active {
+  opacity: 1;
+  display: block;
+}
 @media (max-width: 600px) {
   /* .navbar {
     width: 100%;

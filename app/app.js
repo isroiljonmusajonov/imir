@@ -66,6 +66,11 @@ btns.forEach((btns) => {
 // btns[3].addEventListener("click", () => {
 //   divbuton.classList.add("active");
 // });
+const sana = new Date();
+let limit = 1000 * 2;
+setTimeout(function () {
+  document.querySelector(".footer-img").classList.add("active");
+}, limit);
 
 qayt.addEventListener("click", () => {
   divbuton.classList.remove("active");
@@ -85,18 +90,19 @@ function checkBoxes() {
     }
   });
 }
+// const d = new Date();
+// const s = d.getFullYear();
+const days = [
+  "Dushanbi",
+  "Seshanbi",
+  "Chorshanbi",
+  "Payshanbi",
+  "Juma",
+  "Shanbi",
+  "Dushanbi",
+];
 
-// const boxess = document.querySelectorAll(".woman-box1");
-// window.addEventListener("scroll", checkBoxes);
-// checkBoxes();
-// function checkBoxes() {
-//   const triggerBottom = (window.innerHeight / 5) * 4;
-//   boxess.forEach((box) => {
-//     const boxtop = box.getBoundingClientRect().top;
-//     if (boxtop < triggerBottom) {
-//       box.classList.add("show");
-//     } else {
-//       box.classList.remove("show");
-//     }
-//   });
-// }
+const d = new Date();
+let day = days[d.getDay()];
+
+document.getElementById("demo").innerHTML = `Hafta kuni ${day}`;
