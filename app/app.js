@@ -118,3 +118,23 @@ function myFunction(smallimg) {
   let fullimg = document.getElementById("imageBox");
   fullimg.src = smallimg.src;
 }
+const womin = document.querySelector(".womin");
+const mans = document.querySelector("#man");
+const kids = document.querySelector(".kids");
+const silse = document.querySelector(".silse");
+const box = document.querySelector(".box");
+const woman = document.querySelector(".woman");
+// console.log(womin);
+// console.log(mans);
+// console.log(kids);
+// console.log(silse);
+// console.log(box);
+mans.addEventListener("click", () => {
+  box.classList.add("active");
+});
+womin.addEventListener("click", () => {
+  silse.classList.add("active");
+});
+kids.addEventListener("click", () => {
+  woman.classList.add("active");
+});
