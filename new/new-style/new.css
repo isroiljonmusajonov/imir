@@ -46,48 +46,7 @@ button:hover {
   color: #2d11be;
   background: none;
 }
-/*.navbar .logo img {
-  object-fit: cover;
-}
-.navbar {
-  display: flex;
-  flex-wrap: wrap;
-  box-shadow: 0px 10px 15px whitesmoke;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 9%;
-}
 
-.navbar .menu a {
-  text-decoration: none;
-  margin: 0px 15px;
-  position: relative;
-  color: #000000;
-}
-.navbar .menu a::before {
-  content: "";
-  top: 100%;
-  left: 0;
-  width: 0;
-  height: 2px;
-  position: absolute;
-  background-color: #000000;
-}
-.navbar .menu a:hover::before {
-  width: 100%;
-  transition: all 0.4s linear;
-}
-.navbar .menu .new {
-  color: black;
-  font-weight: bold;
-}
-select {
-  margin: 0px 15px;
-  transition: all 03s linear;
-  border: none;
-  outline: none;
-  cursor: pointer;
-} */
 nav {
   /* background: #171c24; */
   background: #f8f8f8;
@@ -303,6 +262,9 @@ nav .cancel-icons {
   align-items: center;
   padding: 20px 9%;
 }
+.womin-man-kids {
+  display: none;
+}
 .heding .heding-box h4 {
   text-transform: uppercase;
   margin-bottom: 15px;
@@ -441,6 +403,18 @@ nav .cancel-icons {
   color: white;
   /* margin-top: -8px; */
 }
+.emblema h4 {
+  font-size: 35px;
+  text-align: center;
+  margin: 40px 0px 10px 0px;
+}
+.emblema .emblemas {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 9% 70px 9%;
+  /* border: 1px solid red; */
+}
 .contaww .div .div-box button {
   background-color: rgba(68, 68, 68, 0.089);
   border: 1px solid #fff;
@@ -462,7 +436,7 @@ nav .cancel-icons {
 }
 footer {
   width: 100%;
-
+  background-color: whitesmoke;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -601,25 +575,47 @@ footer .footer-box1 button {
   opacity: 1;
   display: block;
 }
-@media (max-width: 600px) {
-  /* .navbar {
-    width: 100%;
-    padding: 10px 9%;
-  }
-  .navbar .btn {
-    display: none;
-  }
-  .navbar .menu {
-    display: none;
-  }
-  .navbar .bars {
+@media (max-width: 500px) {
+  .womin-man-kids {
     display: block;
-    border: 1px solid #444;
+    /* margin-top: 20px; */
+    text-align: center;
+    /* border: 1px solid red; */
+  }
+  .womin-man-kids button {
+    background-color: #2d11be;
+    color: #fff;
     cursor: pointer;
-    padding: 5px 9px;
-    font-size: 22px;
-    border-radius: 5px;
-  } */
+    text-transform: capitalize;
+    padding: 8px 25px;
+  }
+  .h1 {
+    display: none;
+  }
+  #contact-1 {
+    display: none;
+  }
+  #contact-2 {
+    display: none;
+  }
+  #contact-3 {
+    display: none;
+  }
+  #contact-1.active {
+    display: block;
+    /* box-shadow: 0px 4px 8px red; */
+    /* border: 1px solid red; */
+    margin-top: 10px;
+  }
+  #contact-2.active {
+    display: block;
+    margin-top: 10px;
+  }
+  #contact-3.active {
+    display: block;
+    margin-top: 10px;
+  }
+
   .heding .heding-box h4 {
     margin-bottom: 15px;
     margin-top: 50px;
@@ -654,6 +650,28 @@ footer .footer-box1 button {
     font-size: 25px;
     padding: 5px 0px;
   }
+  .emblema .emblemas .emblemas-box {
+    margin: 20px auto;
+    /* border: 1px solid red; */
+    width: 80px;
+    height: 80px;
+  }
+  .emblema .emblemas .emblemas-box img {
+    object-fit: cover;
+    width: 100%;
+  }
+  .emblema h4 {
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 0px 10px 0px;
+  }
+  .emblema .emblemas {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 9%;
+    /* border: 1px solid red; */
+  }
   footer .footer-box {
     width: 200px;
     height: 180px;
@@ -666,5 +684,11 @@ footer .footer-box1 button {
   }
   .footer-img .footer-bottoms button {
     margin: 10px;
+  }
+  .top-arrow {
+    position: fixed;
+    top: 88%;
+    left: 250px;
+    /* border: 1px solid red; */
   }
 }

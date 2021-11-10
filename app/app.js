@@ -74,10 +74,10 @@ btns.forEach((btns) => {
 //   divbuton.classList.add("active");
 // });
 const sana = new Date();
-let limit = 1000 * 2;
-setTimeout(function () {
-  document.querySelector(".footer-img").classList.add("active");
-}, limit);
+// let limit = 1000 * 2;
+// setTimeout(function () {
+//   document.querySelector(".footer-img").classList.add("active");
+// }, limit);
 
 // qayt.addEventListener("click", () => {
 //   divbuton.classList.remove("active");
@@ -130,11 +130,12 @@ const woman = document.querySelector(".woman");
 // console.log(silse);
 // console.log(box);
 mans.addEventListener("click", () => {
-  box.classList.add("active");
+  // box.classList.add("active");
+  box.classList.toggle("active");
 });
 womin.addEventListener("click", () => {
-  silse.classList.add("active");
+  silse.classList.toggle("active");
 });
 kids.addEventListener("click", () => {
-  woman.classList.add("active");
+  woman.classList.toggle("active");
 });

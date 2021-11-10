@@ -219,7 +219,8 @@ nav .cancel-icons {
     margin: 0px;
   }
   nav form {
-    right: 30px;
+    right: 20px;
+    z-index: 99;
   }
 }
 .womin-man-kids {
@@ -774,6 +775,7 @@ footer .footer-box1 button:hover {
   }
   .box {
     display: none;
+    /* margin-top: 0px; */
   }
   .box .box-title {
     display: none;
