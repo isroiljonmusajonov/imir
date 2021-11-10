@@ -897,9 +897,18 @@ footer .footer-box1 button:hover {
     border-radius: 10px;
     outline: none;
     background-color: whitesmoke;
+    position: absolute;
   }
-
+  .footer-img {
+    display: none;
+    width: 80%;
+    /* margin: auto; */
+  }
   .footer-img .footer-bottoms {
     width: 80%;
+    /* position: absolute; */
+    /* margin: auto; */
+    /* text-align: center; */
+    padding: 25px 0px 25px 0px;
   }
 }
