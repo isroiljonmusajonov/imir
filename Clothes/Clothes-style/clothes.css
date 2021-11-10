@@ -38,59 +38,17 @@ body {
 .contact-box .wel #layk:hover {
   color: red;
 }
-.btns {
+.btnss {
   width: 70%;
   padding: 10px;
   background-color: #2d11be;
   color: #fff;
   cursor: pointer;
 }
-
-/*.navbar {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0px 10px 15px whitesmoke;
-  padding: 10px 9%;
+.btnss a {
+  color: #fff;
 }
 
-.navbar .menu .qaa {
-  font-weight: bold;
-}
-.navbar .menu a {
-  text-decoration: none;
-  margin: 0px 15px;
-  position: relative;
-  color: #000000;
-}
-.navbar .bars {
-  display: none;
-}
-.navbar .menu a::before {
-  content: "";
-  top: 100%;
-  left: 0;
-  width: 0;
-  height: 2px;
-  position: absolute;
-  background-color: #000000;
-}
-.navbar .menu a:hover::before {
-  width: 100%;
-  transition: all 0.4s linear;
-}
-.navbar .menu .home {
-  color: black;
-  font-weight: bold;
-}
-select {
-  margin: 0px 15px;
-  transition: all 03s linear;
-  border: none;
-  outline: none;
-  cursor: pointer;
-} */
 nav {
   /* background: #171c24; */
   background: #f8f8f8;

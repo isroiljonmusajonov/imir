@@ -1,16 +1,23 @@
 const upIcon = document.querySelectorAll(".up");
 const h2 = document.querySelectorAll("#h2");
+const h1 = document.querySelectorAll("#h1");
 const but = document.querySelectorAll("#but");
 const buts = document.querySelectorAll("#buts");
-
+const sumasi = document.querySelectorAll("#h3");
+const qaytar = document.querySelectorAll("#qaytar");
 but.forEach((but, i) => {
   but.addEventListener("click", function () {
-    h2[i].innerText = +h2[i].innerText - 1;
+    h2[i].innerText = +h2[i].innerText - 0;
   });
 });
 buts.forEach((buts, i) => {
   buts.addEventListener("click", function () {
     h2[i].innerText = +h2[i].innerText + 1;
+  });
+});
+but.forEach((buts, i) => {
+  buts.addEventListener("click", function () {
+    h1[i].innerText = +h1[i].innerText + 1;
   });
 });
 
@@ -105,4 +112,9 @@ const days = [
 const d = new Date();
 let day = days[d.getDay()];
 
-document.getElementById("demo").innerHTML = `Hafta kuni ${day}`;
+// document.getElementById("demo").innerHTML = `Hafta kuni ${day}`;
+// const texts = prompt("Ismi sharfingizni kirting");
+function myFunction(smallimg) {
+  let fullimg = document.getElementById("imageBox");
+  fullimg.src = smallimg.src;
+}

@@ -28,12 +28,20 @@ button {
   background-color: #2d11be;
   color: white;
 }
-.Up {
+button {
+  margin: 10px 5px 0px 10px;
   border: 1px solid #2d11be;
   background-color: #2d11be;
   color: white;
+  padding: 8px 30px;
 }
-.Up:hover {
+button a {
+  color: #fff;
+}
+button a:hover {
+  color: #2d11be;
+}
+button:hover {
   border: 1px solid #2d11be;
   color: #2d11be;
   background: none;
