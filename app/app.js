@@ -79,9 +79,9 @@ setTimeout(function () {
   document.querySelector(".footer-img").classList.add("active");
 }, limit);
 
-qayt.addEventListener("click", () => {
-  divbuton.classList.remove("active");
-});
+// qayt.addEventListener("click", () => {
+//   divbuton.classList.remove("active");
+// });
 console.log(salom);
 const boxes = document.querySelectorAll(".contact-box");
 window.addEventListener("scroll", checkBoxes);
