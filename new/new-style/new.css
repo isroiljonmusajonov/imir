@@ -106,10 +106,11 @@ nav form .search-data {
   color: #fff;
 }
 nav form button {
-  padding: 0 15px;
+  /* padding: 0px 15px; */
   background: #ff3d00;
   border: none;
   cursor: pointer;
+  margin: 0px 0px;
   font-size: 18px;
   color: #fff;
   border-radius: 2px;
@@ -250,6 +251,7 @@ nav .cancel-icons {
     margin: 0 20px;
   }
   nav form {
+    width: 85%;
     right: 30px;
   }
 }
@@ -676,8 +678,6 @@ footer .footer-box1 button {
     width: 200px;
     height: 180px;
     margin-top: 10px;
-    /* border: 1px solid red; */
-    /* margin: auto; */
   }
   .footer-img .footer-bottoms {
     width: 80%;

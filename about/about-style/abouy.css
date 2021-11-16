@@ -238,7 +238,11 @@ nav .cancel-icons {
     margin: 0 20px;
   }
   nav form {
+    width: 85%;
+    z-index: 100;
     right: 30px;
+    /* background-color: #fff; */
+    /* border: 1px solid red; */
   }
 }
 .heading-img {

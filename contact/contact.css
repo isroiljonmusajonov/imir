@@ -278,6 +278,9 @@ nav .cancel-icons {
     margin: 0 20px;
   }
   nav form {
+    background-color: whitesmoke;
+    width: 85%;
+    z-index: 9999;
     right: 30px;
   }
 }
@@ -561,6 +564,15 @@ footer .footer-box1 button {
   }
   .contaww {
     display: none;
+  }
+  footer {
+    background-color: whitesmoke;
+  }
+  .footer-img {
+    background-color: whitesmoke;
+  }
+  .top-arrow {
+    background-color: whitesmoke;
   }
   footer .footer-box {
     width: 200px;

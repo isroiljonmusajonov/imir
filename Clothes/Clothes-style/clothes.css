@@ -250,6 +250,7 @@ nav .cancel-icons {
     margin: 0 20px;
   }
   nav form {
+    width: 85%;
     right: 30px;
   }
 }
